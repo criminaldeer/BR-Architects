@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+}
+body {
+    min-width: 1080px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: auto; 
+}
+#header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 1px 8px;
+}
+.falling-menu {
+    float: left;
+}
+.falling-menu:hover {
+    padding-bottom: 12px;
+    border-color: #ccc;
+    background-color: #ccc;
+}
+.falling-menu a {
+    text-decoration: none;
+    color: black;
+}
+.short {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+.title {
+    font-size: 20px
+}
+.menu {
+    float: right;
+    padding: 20px 0;
+    margin-right: 4px;
+}
+.menu ul {
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+.menu ul li {
+    margin-right: 25px;
+}
+.menu ul a {
+    text-decoration: none;
+    color: black;
+}
+.menu ul a:hover {
+    color: blueviolet;
+}
+.cover {
+    background: url(pics/architect.jpg) no-repeat center center;
+}
+.central {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 50px;
+    border: 1pt solid black;
+    padding: 4px;
+}
+.logo {
+    padding: 20% 40%;
+}
+span {
+    font-size: 40px;
+    padding-left: 10px;
+}
+.description-block, .info-block, .form {
+    margin: 2% 2% 0 2%;
+}
+p {
+    padding-bottom: 2%;
+    border-bottom: 1pt solid #f1f1f1;
+    font-size: 20px; 
+    margin-bottom: 26px;
+}
+.item {
+    float: left;
+    width: 24%;
+    height: 200px;
+    margin: 17px 17px 0px 0px;
+    background-size: cover;
+}
+.item-pic {
+    width: 100%;
+    height: 192px;
+    text-decoration: none;
+}
+.summer {
+    background-image: url(pics/house2.jpg);
+}
+.brick {
+    background-image: url(pics/house3.jpg);
+}
+.barn {
+    background-image: url(pics/house5.jpg);
+}
+.renovated {
+    background-image: url(pics/house4.jpg);
+}
+.item:nth-of-type(4n+4) {
+    margin-right: 0;
+}
+.item:hover {
+    box-shadow: 8px 6px 22px;
+}
+.label {
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+.information {
+    font-size: 12pt;
+    border-bottom: none;
+}
+.photo {
+    width: 100%;
+}
+h2 {
+    margin-bottom: 8px;
+}
+.profile {
+    width: 22%;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+.profile:last-of-type {
+    margin-right: 0px;
+}
+.additional {
+    color: #dcdcdc;
+    font-size: 14pt;
+    padding-left: 0;
+}
+.profile-description {
+    font-size: 16px;
+    margin-top: 16px;
+    border: none;
+}
+.button {
+    text-decoration: none;
+    border: 1pt solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    padding: 2% 40%;
+}
+.button:hover {
+    box-shadow: 1px 1px 1px;
+    cursor: pointer;
+}
+.entry {
+    font-size: 16px;
+    padding-left: 0;
+}
+input {
+    border-bottom: 1px solid #808080;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 14px;
+    font-size: 20px;
+    padding: 8px 8px;
+    width: 100%;
+}
+.send-button {
+    text-transform: uppercase;
+    width: 15%;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+.button:hover, .send-button:hover {
+    background-color: darkred;
+} 
+#map {
+    margin: 40px 0;
+}
+iframe {
+    width: 100%;
+}
+#footer {
+    height: 100px;
+    background-color: black;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .item {
+        width: 22%;
+        margin: 10px 41px 0px 0px;
+    }
+    .profile {
+        margin-right: 40px;
+    }
+    .button {
+        padding: 6px 80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .item {
+        width: 46%;
+        height: 286px;
+        margin: 20px 0px 0px 28px;
+    }
+    .label {
+        font-size: 24px;
+    }
+    p {
+        font-size: 28px;
+        margin-left: 30px;
+    }
+    .information {
+        font-size: 14pt;
+        margin-left: 32px;
+    }
+    .team-info {
+        margin-left: 32px;
+    }
+    .profile {
+        width: 45%;
+        margin-right: 50px;
+    }
+    .profile-description {
+        font-size: 22px;
+    }
+    .button {
+        font-size: 18pt;
+        padding: 6px 183px;
+    }
+    .entry {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #header {
+        height: 120px;
+    }
+    .falling-menu {
+        padding: 3% 38%;
+    }
+    .short, .title {
+        font-size: 30px;
+    }
+    .media {
+        display: none;
+    }
+    .logo {
+        padding: 22% 48%;
+    }
+    .central {
+        font-size: 86px;
+        padding: 10px;
+    }
+    p {
+        font-size: 50px;
+    }
+    .item {
+        margin: 20px 0px 0px 34px;
+        width: 93%;
+        height: 570px;
+    }
+    .label {
+        font-size: 42px;
+    }
+    .information {
+        font-size: 35pt;
+    }
+    .profile {
+        width: 96%;
+        margin-bottom: 84px;
+    }
+    h2 {
+        font-size: 42pt;
+    }
+    .additional {
+        font-size: 28pt
+    }
+    .profile-description {
+        font-size: 40px;
+        margin-left: 0;
+    }
+    .button {
+        font-size: 32pt;
+        padding: 14px 405px;
+    }
+    .entry {
+        font-size: 38px;
+        margin-left: 34px;
+    }
+    input {
+        margin-left: 78px;
+        margin-top: 34px;
+        font-size: 40px;
+        width: 85%;
+    }
+    .send-button {
+        width: 40%;
+        font-size: 32px;
+        padding-top: 22px;
+        padding-bottom: 18px;
+    }
+}
